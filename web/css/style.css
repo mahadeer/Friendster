@@ -1,0 +1,29 @@
+body {
+    margin: 10px;
+    overflow: hidden;
+    background-image: -webkit-radial-gradient(50% -50%, circle farthest-side, #fcfcfc, #d6d6d6 60%, #d6d6d6);
+    background-image: -moz-radial-gradient(50% -50%, circle farthest-side, #fcfcfc, #d6d6d6 60%, #d6d6d6);
+    background-image: -ms-radial-gradient(50% -50%, circle farthest-side, #fcfcfc, #d6d6d6 60%, #d6d6d6);
+    background-image: -o-radial-gradient(50% -50%, circle farthest-side, #fcfcfc, #d6d6d6 60%, #d6d6d6);
+    background-image: radial-gradient(50% -50%, circle farthest-side, #fcfcfc, #d6d6d6 60%, #d6d6d6);
+}
+
+.cm-fixed {
+    min-height: 355px;
+    max-height: 355px;
+}
+
+.cm-content-fixed {
+    min-height: 325px;
+    max-height: 325px;
+}
+
+.cm-feed-fixed {
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.cm-feed-content-fixed {
+    min-height: 120px;
+    max-height: 120px;
+}

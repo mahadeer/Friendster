@@ -1,8 +1,13 @@
 # Don’t commit the following directories created by pub.
 .buildlog
 .pub/
+.idea/
 build/
 packages
+lib/semantic/src
+lib/semantic/tasks
+lib/semantic/themes
+lib/node_modules
 
 # Or the files created by dart2js.
 *.dart.js

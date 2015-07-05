@@ -1,0 +1,3 @@
+name: Friendster
+dependencies:
+  browser: any
