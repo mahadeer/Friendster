@@ -66,30 +66,30 @@
                     </div>
                 </div>
                 <div class="ui secondary segment cm-content-fixed">
-                    <div class="ui form">
+                    <div id="frm_new_user" class="ui form" bind-obj="Person">
                         <h4 class="ui dividing header">Personal Information</h4>
                         <div class="three fields">
                             <div class="field">
                                 <label>First name</label>
-                                <input type="text" placeholder="First Name">
+                                <input type="text" bind-value="FirstName" placeholder="First Name">
                             </div>
                             <div class="field">
                                 <label>Middle name</label>
-                                <input type="text" placeholder="Middle Name">
+                                <input type="text" bind-value="MiddleName" placeholder="Middle Name">
                             </div>
                             <div class="field">
                                 <label>Last name</label>
-                                <input type="text" placeholder="Last Name">
+                                <input type="text" bind-value="LastName" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="three fields">
                             <div class="eleven wide field">
                                 <label>Family Name</label>
-                                <input type="text" placeholder="Family Name">
+                                <input type="text" bind-value="FamilyName" placeholder="Family Name">
                             </div>
                             <div class="field">
                                 <label>Gender</label>
-                                <select class="ui dropdown">
+                                <select bind-value="Sex" class="ui dropdown">
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                 </select>
@@ -98,21 +98,21 @@
                         <div class="two fields">
                             <div class="field">
                                 <label>State</label>
-                                <select class="ui fluid dropdown">
+                                <select bind-value="State" class="ui fluid dropdown">
                                     <option value="">State</option>
                                 </select>
                             </div>
                             <div class="field">
                                 <label>Country</label>
-                                <select class="ui fluid dropdown">
+                                <select bind-value="Country" class="ui fluid dropdown">
                                     <option value="">Country</option>
                                 </select>
                             </div>
                         </div>
                         <div class="ui fluid buttons">
-                            <button class="ui negative button">Reset</button>
+                            <button id="btn_Reset" class="ui negative button">Reset</button>
                             <div class="or"></div>
-                            <button class="ui positive button">Save</button>
+                            <button id="btn_AddUser" class="ui positive button">Add User</button>
                         </div>
                     </div>
                 </div>
