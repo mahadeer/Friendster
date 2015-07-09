@@ -1,0 +1,26 @@
+{
+    "Friends": [{
+        "FirstName":"Mahadeer",
+        "MiddleName":"",
+        "LastName":"Mohamed",
+        "FamilyName": "Jahir Hussain",
+        "Sex" : "male",
+        "State": "TN",
+        "Country": "India"
+    },{
+        "FirstName":"Rizwan",
+        "MiddleName":"",
+        "LastName":"",
+        "FamilyName": "Kamaludeen",
+        "Sex" : "male",
+        "State": "TN",
+        "Country": "India"
+    }],
+    "Activity":[{
+        "Message" : "You have Created Rizwan",
+        "Date" : "09-07-2015 11:26 PM"
+    },{
+        "Message" : "You have Created Mahadeer, Mohamed",
+        "Date" : "09-07-2015 11:23 PM"
+    }]
+}
