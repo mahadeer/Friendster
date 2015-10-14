@@ -1,25 +1,33 @@
 import 'dart:html';
 import 'dart:convert';
-import 'Helpers/JSONHelper.dart';
+import 'Controller/PersonController.dart';
 import 'Helpers/FormParser.dart';
-import 'model/Person.dart';
 
+var url = 'http://localhost:63342/Portfolio/web/data/data.json';
 void main() {
-
-  /* JSON initializers from local db*/
-  JSONHelper.FetchData().then(fn_LoadData);
   fn_BindEvents();
+  fn_UpdateData();
 }
 
-void fn_AddUser(e) {
-  var user_form = new FormParser('#frm_new_user');
-  var data = user_form.ParseData();
-  var person = new Person(data);
+void fn_UpdateData() {
+  PersonController.GetPersonList(url)
+    .then(fn_LoadData);
 }
 
 void fn_BindEvents() {
   var submit = querySelector('#btn_AddUser') as ButtonElement;
   submit.onClick.listen(fn_AddUser);
+}
+
+void fn_AddUser(e) {
+  var user_form = new FormParser('#frm_new_user');
+  var data = user_form.ParseData();
+  PersonController.AddPerson(url, data["Person"]).then(fn_ReloadData);
+}
+
+void fn_ReloadData(val) {
+  print(val);
+  fn_UpdateData();
 }
 
 void fn_LoadData (String res) {
